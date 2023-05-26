@@ -1,0 +1,1 @@
+SELECT gender, COUNT(*) AS total FROM map_user_hobby INNER JOIN users ON map_user_hobby.id_user = users.id INNER JOIN hobbies ON map_user_hobby.id_hobby = hobbies.id WHERE hobbies.name = 'skipping'GROUP BY gender;
